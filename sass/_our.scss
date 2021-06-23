@@ -1,0 +1,32 @@
+.our {
+  display: flex;
+  padding:70px 0;
+  &-right {
+    width: 60%;
+    h2{
+      max-width: 325px;
+      margin-bottom: 65px;
+    }
+    p{
+      max-width: 550px;
+      margin-bottom: 40px;
+      line-height: 2.3;
+    }
+  }
+  &-left{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .our-item{
+      width: 200px;
+      height:200px;
+      @include flexCenter();
+      flex-direction: column;
+      background-color: #f6f5f4;
+      margin: 2.5% 0px;
+    }
+  }
+}

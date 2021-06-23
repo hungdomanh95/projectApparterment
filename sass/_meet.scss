@@ -1,0 +1,55 @@
+.meet{
+  background-color: #F5F5F3;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  h2{
+    margin-bottom: 30px;
+  }
+  .text{
+    max-width: 360px;
+    line-height: 2.3;
+  }
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+      background-color: white;
+      box-shadow: rgba(215,215,215,0.5) 0px 4px 16px;
+      margin: 18px 0;
+      max-width: 350px;
+      .item-bottom {
+        padding: 0 25px;
+        // text-align: center;
+        .text{
+          &--semiSmall{
+            margin:20px 0;
+          }
+        }
+        .item-content {
+          display: flex;
+          justify-content:space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 30px;
+          .text{
+            &--semi{
+              font-size: 15px;
+            }
+          }
+          .item-right {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            .item-icon{
+              margin-left:30px;
+              i{
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

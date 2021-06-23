@@ -1,0 +1,51 @@
+.work{
+  padding-top: 70px;
+  padding-bottom: 40px;
+  h2{
+    margin-bottom: 30px;
+  }
+  .text{
+    max-width: 360px;
+    line-height: 2.3;
+  }
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+
+    &-item{
+      transition: all 0.25s;
+      background-color: white;
+      box-shadow: rgba(215,215,215,0.5) 0px 4px 16px;
+      padding:45px 60px 45px 45px;
+      .text{
+        &--big{
+          font-size: 100px;
+          line-height: unset;
+        }
+        &--small{
+          margin-left: 25px;
+          max-width: 210px;
+        }
+        &--semiSmall{
+          margin-top:25px;
+          font-size: 13px;
+          border-bottom: 2px solid #1e383c;
+          padding-bottom: 5px;
+          margin-left: 25px;
+          max-width: 210px;
+          display: inline-block;
+        }
+      }
+      &:hover{
+        cursor: pointer;
+        background-color:var(--yellow-color);
+        color:white;
+        a{
+          color:white;
+          border-bottom-color: white;
+        }
+      }
+    }
+  }
+}

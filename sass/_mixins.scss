@@ -1,0 +1,54 @@
+@mixin colorMain {
+  // background-color: #77cc6d;
+}
+@mixin btn {
+  background-color: white;
+  border-radius: 30px;
+  font-size: 21px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// $align-items:center : giá trị mặc định
+@mixin flexCenter($align-items:center) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: center;
+}
+/*
+  @mixin mixinName(variable: $a, $b){
+
+  }
+*/
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin centerAbsolute($direction: "both") {
+  position: absolute;
+  @if $direction == "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @if $direction == "left" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $direction == "top" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@mixin btn {
+  background-color: white;
+  border-radius: 30px;
+  font-size: 21px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

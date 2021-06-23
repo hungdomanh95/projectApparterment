@@ -1,0 +1,38 @@
+.awesome {
+  padding:90px 0;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  .awesome-item{
+    .item-location{
+      width: 60%;
+      background-color: var(--yellow-color);
+      display: flex;
+      justify-content: space-between;
+      padding:25px 50px;
+      align-items: center;
+      transform: translateX(40px) translateY(-50px);
+    }
+    h3{
+      margin-bottom: 40px;
+    }
+    .text{
+      &--small{
+        max-width: 440px;
+        line-height: 2.3;
+      }
+    }
+    .awesome-button{
+      display: flex;
+      // justify-content: center;
+      margin-top: 45px;
+      .btn{
+        background-color: #1E383D;
+        color:white;
+        border-radius: unset;
+      }
+    }
+  }
+  }
+}

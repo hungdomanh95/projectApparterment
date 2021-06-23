@@ -1,0 +1,29 @@
+.services{
+  padding-bottom: 80px;
+  padding-top: 40px;
+  h2{
+    margin-bottom: 30px;
+  }
+  .text{
+    max-width: 360px;
+    line-height: 2.3;
+  }
+  &-content{
+    display: flex;
+    margin-top: 55px;
+    &-right{
+      padding:20px 0;
+      margin-left: 122px;
+      .servies-item{
+        margin-bottom: 45px;
+        h3{
+          margin-bottom: 20px;
+        }
+        .text{
+          max-width: 440px;
+          line-height: 2.3;
+        }
+      }
+    }
+  }
+}
